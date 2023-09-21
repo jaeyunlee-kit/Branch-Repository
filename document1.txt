@@ -9,17 +9,8 @@ def partition(l, r, nums):
     # Finally swapping the last element with the pointer indexed number
     nums[ptr], nums[r] = nums[r], nums[ptr]
     return ptr
- 
- 
-def quicksort(l, r, nums):
-    if len(nums) == 1:  # Terminating Condition for recursion. VERY IMPORTANT!
-        return nums
-    if l < r:
-        pi = partition(l, r, nums)
-        quicksort(l, pi-1, nums)  # Recursively sorting the left values
-        quicksort(pi+1, r, nums)  # Recursively sorting the right values
-    return nums
- 
+
+A
  
 example = [4, 7, 8, 10, 3]
 result = [1, 2, 3, 4, 5]
